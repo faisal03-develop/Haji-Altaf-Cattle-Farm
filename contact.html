@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Haji Altaf Cattle Farm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" type="image" href="/Farmtransparent.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="/Farmtransparent.png" alt="Farm Logo" class="nav-logo-img">
+        <span class="nav-logo-text">Haji Altaf Cattle Farm</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="services.html" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link auth-link" id="authBtn">Login/Signup</a>
+        </li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p class="page-subtitle">Get in touch with us for inquiries and support</p>
+    </section>
+
+    <section class="contact-content">
+      <div class="contact-grid">
+        <div class="contact-info-section">
+          <h2>Get In Touch</h2>
+          <p>Interested in our premium calves? Get in touch with us for more information about our products and services.</p>
+          
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h3>Phone</h3>
+                <p>+92 303 013 3325</p>
+                <p class="contact-note">Available 24/7 for urgent inquiries</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h3>Email</h3>
+                <p>altaffaisal532@gmail.com</p>
+                <p class="contact-note">We respond within 24 hours</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h3>Location</h3>
+                <p>Vehari, Punajb, Pakistan</p>
+                <p class="contact-note">Visit our farm by appointment</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕒</div>
+              <div>
+                <h3>Business Hours</h3>
+                <p>Monday - Saturday: 6:00 AM - 6:00 PM</p>
+                <p class="contact-note">Sunday: By appointment only</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-section">
+          <h2>Send us a Message</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="purchase">Purchase Inquiry</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="consultation">Consultation Request</option>
+                <option value="support">Customer Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Please describe your inquiry in detail..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <span class="checkmark"></span>
+                Subscribe to our newsletter for updates and offers
+              </label>
+            </div>
+            <button type="submit" class="contact-submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="location-section">
+        <h2>Visit Our Farm</h2>
+        <p>We welcome visitors to our farm by appointment. Please contact us in advance to schedule your visit.</p>
+        <div class="location-details">
+          <div class="location-item">
+            <h3>Farm Address</h3>
+            <p>Haji Altaf Cattle Farm<br>
+            Rural Area, Pakistan<br>
+            (Specific address provided upon request)</p>
+          </div>
+          <div class="location-item">
+            <h3>Directions</h3>
+            <p>We're located in the rural areas of Pakistan. Detailed directions will be provided when you schedule your visit.</p>
+          </div>
+          <div class="location-item">
+            <h3>What to Expect</h3>
+            <p>• Guided tour of our facilities<br>
+            • Meet our livestock<br>
+            • Learn about our farming practices<br>
+            • Discuss your specific needs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>What types of calves do you offer?</h3>
+            <p>We offer various breeds of healthy, grass-fed calves suitable for different purposes including meat production and breeding.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you provide delivery services?</h3>
+            <p>Yes, we offer reliable delivery services nationwide with climate-controlled transport and real-time tracking.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What are your payment terms?</h3>
+            <p>We offer flexible payment options including cash, bank transfer, and credit arrangements for bulk purchases.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you provide health certificates?</h3>
+            <p>Yes, all our livestock come with complete health documentation and vaccination records.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Login</h2>
+        <button class="close-btn" id="closeModal">&times;</button>
+      </div>
+      
+      <div class="auth-tabs">
+        <button class="tab-btn active" data-tab="login">Login</button>
+        <button class="tab-btn" data-tab="signup">Sign Up</button>
+      </div>
+      
+      <!-- Login Form -->
+      <form class="auth-form" id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="password" required>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="remember">
+            <span class="checkmark"></span>
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="auth-submit-btn">Login</button>
+        <p class="forgot-password">
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </p>
+      </form>
+      
+      <!-- Signup Form -->
+      <form class="auth-form hidden" id="signupForm">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPhone">Phone Number</label>
+          <input type="tel" id="signupPhone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="terms" required>
+            <span class="checkmark"></span>
+            I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+          </label>
+        </div>
+        <button type="submit" class="auth-submit-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="/Farmtransparent.png" alt="Farm Logo">
+          <span>Haji Altaf Cattle Farm</span>
+        </div>
+        <p>Premium calves for meat production with the highest standards of quality and care.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">📱</a>
+          <a href="#" class="social-link" aria-label="Phone">📞</a>
+          <a href="#" class="social-link" aria-label="Email">📧</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="features.html">Features</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📞 +92 303 013 3325</p>
+        <p>📧 altaffaisal532@gmail.com</p>
+        <p>📍 Vehari, Punjab, Pakistan</p>
+        <p>🕒 Mon-Sat: 6AM-6PM</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <p>🐄 Healthy Grass-Fed Calves</p>
+        <p>🌱 Sustainable Farming</p>
+        <p>🚚 Reliable Delivery</p>
+        <p>⭐ Quality Guarantee</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Haji Altaf Cattle Farm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // Keyboard support for hamburger menu
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      }
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+    
+    // Close mobile menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+    
+    // Add scroll-based navbar styling
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+      } else {
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+      }
+    });
+    
+    // Contact form handling
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const firstName = formData.get('firstName');
+      const lastName = formData.get('lastName');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const subject = formData.get('subject');
+      const message = formData.get('message');
+      const newsletter = formData.get('newsletter');
+      
+      // Basic validation
+      if (!firstName || !lastName || !email || !phone || !subject || !message) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // Simulate form submission
+      console.log('Contact form submission:', { firstName, lastName, email, phone, subject, message, newsletter });
+      alert('Thank you for your message! We will get back to you within 24 hours.');
+      
+      // Reset form
+      contactForm.reset();
+    });
+    
+    // Auth Modal Functionality
+    const authBtn = document.getElementById('authBtn');
+    const authModal = document.getElementById('authModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+    
+    // Open modal
+    authBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      authModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Close modal
+    closeModal.addEventListener('click', () => {
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    // Close modal when clicking outside
+    authModal.addEventListener('click', (e) => {
+      if (e.target === authModal) {
+        authModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && authModal.classList.contains('active')) {
+        authModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Tab switching
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+        
+        // Update active tab
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Show/hide forms
+        if (tab === 'login') {
+          loginForm.classList.remove('hidden');
+          signupForm.classList.add('hidden');
+          modalTitle.textContent = 'Login';
+        } else {
+          loginForm.classList.add('hidden');
+          signupForm.classList.remove('hidden');
+          modalTitle.textContent = 'Sign Up';
+        }
+      });
+    });
+    
+    // Form submission handling
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(loginForm);
+      const email = formData.get('email');
+      const password = formData.get('password');
+      const remember = formData.get('remember');
+      
+      // Basic validation
+      if (!email || !password) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // Simulate login process
+      console.log('Login attempt:', { email, password, remember });
+      alert('Login functionality would be implemented here');
+      
+      // Close modal after successful login
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(signupForm);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const password = formData.get('password');
+      const confirmPassword = formData.get('confirmPassword');
+      const terms = formData.get('terms');
+      
+      // Basic validation
+      if (!name || !email || !phone || !password || !confirmPassword) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+      
+      if (!terms) {
+        alert('Please agree to the Terms & Conditions');
+        return;
+      }
+      
+      // Simulate signup process
+      console.log('Signup attempt:', { name, email, phone, password });
+      alert('Signup functionality would be implemented here');
+      
+      // Close modal after successful signup
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    // Password confirmation validation
+    const signupPassword = document.getElementById('signupPassword');
+    const signupConfirmPassword = document.getElementById('signupConfirmPassword');
+    
+    signupConfirmPassword.addEventListener('input', () => {
+      if (signupPassword.value !== signupConfirmPassword.value) {
+        signupConfirmPassword.setCustomValidity('Passwords do not match');
+      } else {
+        signupConfirmPassword.setCustomValidity('');
+      }
+    });
+    
+    signupPassword.addEventListener('input', () => {
+      if (signupConfirmPassword.value && signupPassword.value !== signupConfirmPassword.value) {
+        signupConfirmPassword.setCustomValidity('Passwords do not match');
+      } else {
+        signupConfirmPassword.setCustomValidity('');
+      }
+    });
+  </script>
+</body>
+</html> 
