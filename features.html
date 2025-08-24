@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features - Haji Altaf Cattle Farm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="features.css">
+  <link rel="icon" type="image" href="/Farmtransparent.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="/Farmtransparent.png" alt="Farm Logo" class="nav-logo-img">
+        <span class="nav-logo-text">Haji Altaf Cattle Farm</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="features.html" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link auth-link" id="authBtn">Login/Signup</a>
+        </li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="page-header">
+      <h1>Why Choose Us?</h1>
+      <p class="page-subtitle">Discover the unique features and services that make Haji Altaf Cattle Farm your trusted partner for premium quality calves.</p>
+    </section>
+
+    <section class="features-content">
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>🐄 Premium Quality Calves</h3>
+          <p>We specialize in raising healthy, well-cared-for calves that meet the highest standards for meat production.</p>
+          <ul class="feature-list">
+            <li>Grass-fed and naturally raised</li>
+            <li>Regular health monitoring</li>
+            <li>Optimal nutrition programs</li>
+            <li>Disease-free livestock</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>🌱 Sustainable Practices</h3>
+          <p>Our farming methods prioritize environmental responsibility and animal welfare.</p>
+          <ul class="feature-list">
+            <li>Eco-friendly farming techniques</li>
+            <li>Responsible land management</li>
+            <li>Reduced carbon footprint</li>
+            <li>Community-focused approach</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>🚚 Reliable Delivery</h3>
+          <p>We ensure timely and safe delivery of your livestock to your location.</p>
+          <ul class="feature-list">
+            <li>Professional transportation</li>
+            <li>Climate-controlled vehicles</li>
+            <li>Real-time tracking</li>
+            <li>Flexible delivery options</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3>⭐ Trusted by Customers</h3>
+          <p>Our reputation is built on quality, reliability, and customer satisfaction.</p>
+          <ul class="feature-list">
+            <li>Proven track record</li>
+            <li>Customer testimonials</li>
+            <li>Long-term partnerships</li>
+            <li>Quality guarantees</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>🐄 Calf Supply</h3>
+            <p>Premium quality calves for meat production, available in various sizes and breeds to meet your specific requirements.</p>
+          </div>
+          <div class="service-item">
+            <h3>🌾 Feeding Programs</h3>
+            <p>Customized nutrition programs to ensure optimal growth and health of your livestock.</p>
+          </div>
+          <div class="service-item">
+            <h3>🏥 Health Monitoring</h3>
+            <p>Regular veterinary check-ups and health monitoring to maintain the highest standards of animal welfare.</p>
+          </div>
+          <div class="service-item">
+            <h3>📋 Documentation</h3>
+            <p>Complete health records, vaccination certificates, and breeding documentation for all livestock.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quality-section">
+        <h2>Quality Assurance</h2>
+        <div class="quality-grid">
+          <div class="quality-item">
+            <h3>🏆 Premium Standards</h3>
+            <p>We maintain the highest standards in animal husbandry, ensuring that every calf meets premium quality requirements for meat production.</p>
+          </div>
+          <div class="quality-item">
+            <h3>🔍 Quality Control</h3>
+            <p>Rigorous quality control processes at every stage, from breeding to delivery, ensuring consistent excellence.</p>
+          </div>
+          <div class="quality-item">
+            <h3>🤝 Customer Support</h3>
+            <p>Dedicated customer support team available to assist you with any questions or concerns about your livestock.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Login</h2>
+        <button class="close-btn" id="closeModal">&times;</button>
+      </div>
+      
+      <div class="auth-tabs">
+        <button class="tab-btn active" data-tab="login">Login</button>
+        <button class="tab-btn" data-tab="signup">Sign Up</button>
+      </div>
+      
+      <!-- Login Form -->
+      <form class="auth-form" id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="password" required>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="remember">
+            <span class="checkmark"></span>
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="auth-submit-btn">Login</button>
+        <p class="forgot-password">
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </p>
+      </form>
+      
+      <!-- Signup Form -->
+      <form class="auth-form hidden" id="signupForm">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPhone">Phone Number</label>
+          <input type="tel" id="signupPhone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="terms" required>
+            <span class="checkmark"></span>
+            I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+          </label>
+        </div>
+        <button type="submit" class="auth-submit-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="/Farmtransparent.png" alt="Farm Logo">
+          <span>Haji Altaf Cattle Farm</span>
+        </div>
+        <p>Premium calves for meat production with the highest standards of quality and care.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">📱</a>
+          <a href="#" class="social-link" aria-label="Phone">📞</a>
+          <a href="#" class="social-link" aria-label="Email">📧</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About Us</a></p>
+        <p><a href="features.html">Features</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📞 +92 XXX XXX XXXX</p>
+        <p>📧 info@hajialtafcattlefarm.com</p>
+        <p>📍 Pakistan</p>
+        <p>🕒 Mon-Sat: 8AM-6PM</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <p>🐄 Healthy Grass-Fed Calves</p>
+        <p>🌱 Sustainable Farming</p>
+        <p>🚚 Reliable Delivery</p>
+        <p>⭐ Quality Guarantee</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Haji Altaf Cattle Farm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // Keyboard support for hamburger menu
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      }
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+    
+    // Close mobile menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+    
+    // Add scroll-based navbar styling
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+      } else {
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+      }
+    });
+    
+    // Auth Modal Functionality
+    const authBtn = document.getElementById('authBtn');
+    const authModal = document.getElementById('authModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+    
+    // Open modal
+    authBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      authModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Close modal
+    closeModal.addEventListener('click', () => {
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    // Close modal when clicking outside
+    authModal.addEventListener('click', (e) => {
+      if (e.target === authModal) {
+        authModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && authModal.classList.contains('active')) {
+        authModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Tab switching
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.getAttribute('data-tab');
+        
+        // Update active tab
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Show/hide forms
+        if (tab === 'login') {
+          loginForm.classList.remove('hidden');
+          signupForm.classList.add('hidden');
+          modalTitle.textContent = 'Login';
+        } else {
+          loginForm.classList.add('hidden');
+          signupForm.classList.remove('hidden');
+          modalTitle.textContent = 'Sign Up';
+        }
+      });
+    });
+    
+    // Form submission handling
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(loginForm);
+      const email = formData.get('email');
+      const password = formData.get('password');
+      const remember = formData.get('remember');
+      
+      // Basic validation
+      if (!email || !password) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // Simulate login process
+      console.log('Login attempt:', { email, password, remember });
+      alert('Login functionality would be implemented here');
+      
+      // Close modal after successful login
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(signupForm);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const password = formData.get('password');
+      const confirmPassword = formData.get('confirmPassword');
+      const terms = formData.get('terms');
+      
+      // Basic validation
+      if (!name || !email || !phone || !password || !confirmPassword) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+      
+      if (!terms) {
+        alert('Please agree to the Terms & Conditions');
+        return;
+      }
+      
+      // Simulate signup process
+      console.log('Signup attempt:', { name, email, phone, password });
+      alert('Signup functionality would be implemented here');
+      
+      // Close modal after successful signup
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    // Password confirmation validation
+    const signupPassword = document.getElementById('signupPassword');
+    const signupConfirmPassword = document.getElementById('signupConfirmPassword');
+    
+    signupConfirmPassword.addEventListener('input', () => {
+      if (signupPassword.value !== signupConfirmPassword.value) {
+        signupConfirmPassword.setCustomValidity('Passwords do not match');
+      } else {
+        signupConfirmPassword.setCustomValidity('');
+      }
+    });
+    
+    signupPassword.addEventListener('input', () => {
+      if (signupConfirmPassword.value && signupPassword.value !== signupConfirmPassword.value) {
+        signupConfirmPassword.setCustomValidity('Passwords do not match');
+      } else {
+        signupConfirmPassword.setCustomValidity('');
+      }
+    });
+  </script>
+</body>
+</html> 
